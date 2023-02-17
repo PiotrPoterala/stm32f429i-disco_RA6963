@@ -4,6 +4,8 @@
 
 
 	#define APB2_CORE_CLOCK	90000000
+	
+	#define BASE_FREQUENCY_OF_TIM1	2000
 
 	#define NVIC_PriGroup_0         ((uint32_t)0x7) /*!< 0 bits for pre-emption priority
 																															4 bits for subpriority */
@@ -15,9 +17,9 @@
 																															1 bits for subpriority */
 	#define NVIC_PriGroup_4         ((uint32_t)0x3) /*!< 4 bits for pre-emption priority
 																															0 bits for subpriority */
-
-	#define RCC_PLLCFGR_PLLM_DIV12		12
+	#define RCC_PLLCFGR_PLLM_DIV4			4
 	#define RCC_PLLCFGR_PLLM_DIV16		16
+	#define RCC_PLLCFGR_PLLN_MUL180		(180<<6)
 	#define RCC_PLLCFGR_PLLN_MUL360		(360<<6)
 	#define RCC_PLLCFGR_PLLP_DIV2			0
 	#define RCC_PLLCFGR_PLLQ_DIV8			(8<<24)

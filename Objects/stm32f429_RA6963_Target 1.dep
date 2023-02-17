@@ -1,83 +1,0 @@
-Dependencies for Project 'stm32f429_RA6963', Target 'Target 1': (DO NOT MODIFY !)
-CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
-F (..\..\..\PP_Library_C_hub\PP_Delay\delay.c)(0x63E2CA6D)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\..\PP_Library_C_hub\PP_Delay -I ..\..\..\PP_Library_C_hub\PP_Hardware_Library -I ..\..\..\PP_Library_C_hub\PP_LCDgraph_Library -I ..\..\..\PP_Library_C_hub\PP_Pins -I .-I.\RTE\_Target_1-IC:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\poter\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F429xx -DSTM32F427_437xx-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
-I (..\..\..\PP_Library_C_hub\PP_Delay\delay.h)(0x63E2B5F0)
-I (.\stm32f4xx.h)(0x5D012A80)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F9F3E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F9F3E)
-I (.\system_stm32f4xx.h)(0x5D14BF58)
-F (..\..\..\PP_Library_C_hub\PP_Hardware_Library\lcd_font.c)(0x63E2C52B)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\..\PP_Library_C_hub\PP_Delay -I ..\..\..\PP_Library_C_hub\PP_Hardware_Library -I ..\..\..\PP_Library_C_hub\PP_LCDgraph_Library -I ..\..\..\PP_Library_C_hub\PP_Pins -I .-I.\RTE\_Target_1-IC:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\poter\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F429xx -DSTM32F427_437xx-o .\objects\lcd_font.o --omf_browse .\objects\lcd_font.crf --depend .\objects\lcd_font.d)
-F (..\..\..\PP_Library_C_hub\PP_Hardware_Library\lcd_icons.c)(0x63073789)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\..\PP_Library_C_hub\PP_Delay -I ..\..\..\PP_Library_C_hub\PP_Hardware_Library -I ..\..\..\PP_Library_C_hub\PP_LCDgraph_Library -I ..\..\..\PP_Library_C_hub\PP_Pins -I .-I.\RTE\_Target_1-IC:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\poter\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F429xx -DSTM32F427_437xx-o .\objects\lcd_icons.o --omf_browse .\objects\lcd_icons.crf --depend .\objects\lcd_icons.d)
-F (..\..\..\PP_Library_C_hub\PP_Hardware_Library\t6963.c)(0x63EEA5C3)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\..\PP_Library_C_hub\PP_Delay -I ..\..\..\PP_Library_C_hub\PP_Hardware_Library -I ..\..\..\PP_Library_C_hub\PP_LCDgraph_Library -I ..\..\..\PP_Library_C_hub\PP_Pins -I .-I.\RTE\_Target_1-IC:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\poter\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F429xx -DSTM32F427_437xx-o .\objects\t6963.o --omf_browse .\objects\t6963.crf --depend .\objects\t6963.d)
-I (..\..\..\PP_Library_C_hub\PP_Hardware_Library\t6963.h)(0x63EEA528)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5D9B2678)
-I (..\..\..\PP_Library_C_hub\PP_Delay\delay.h)(0x63E2B5F0)
-I (..\..\..\PP_Library_C_hub\PP_Pins\def_pins_stm32f4.h)(0x63E7D2CA)
-I (.\stm32f4xx.h)(0x5D012A80)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F9F3E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F9F3E)
-I (.\system_stm32f4xx.h)(0x5D14BF58)
-I (.\config.h)(0x63E7D5F5)
-F (..\..\..\PP_Library_C_hub\PP_LCDgraph_Library\pp_lcdgraph.c)(0x63ED52AB)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\..\PP_Library_C_hub\PP_Delay -I ..\..\..\PP_Library_C_hub\PP_Hardware_Library -I ..\..\..\PP_Library_C_hub\PP_LCDgraph_Library -I ..\..\..\PP_Library_C_hub\PP_Pins -I .-I.\RTE\_Target_1-IC:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\poter\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F429xx -DSTM32F427_437xx-o .\objects\pp_lcdgraph.o --omf_browse .\objects\pp_lcdgraph.crf --depend .\objects\pp_lcdgraph.d)
-I (..\..\..\PP_Library_C_hub\PP_LCDgraph_Library\pp_lcdgraph.h)(0x63ED50ED)
-I (..\..\..\PP_Library_C_hub\PP_Hardware_Library\t6963.h)(0x63EEA528)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5D9B2678)
-I (..\..\..\PP_Library_C_hub\PP_Delay\delay.h)(0x63E2B5F0)
-I (..\..\..\PP_Library_C_hub\PP_Pins\def_pins_stm32f4.h)(0x63E7D2CA)
-I (.\stm32f4xx.h)(0x5D012A80)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F9F3E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F9F3E)
-I (.\system_stm32f4xx.h)(0x5D14BF58)
-F (.\config.c)(0x63E7D6CF)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\..\PP_Library_C_hub\PP_Delay -I ..\..\..\PP_Library_C_hub\PP_Hardware_Library -I ..\..\..\PP_Library_C_hub\PP_LCDgraph_Library -I ..\..\..\PP_Library_C_hub\PP_Pins -I .-I.\RTE\_Target_1-IC:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\poter\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F429xx -DSTM32F427_437xx-o .\objects\config.o --omf_browse .\objects\config.crf --depend .\objects\config.d)
-I (config.h)(0x63E7D5F5)
-I (stm32f4xx.h)(0x5D012A80)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F9F3E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F9F3E)
-I (system_stm32f4xx.h)(0x5D14BF58)
-I (..\..\..\PP_Library_C_hub\PP_Pins\def_pins_stm32f4.h)(0x63E7D2CA)
-F (.\main.c)(0x63E7D580)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\..\PP_Library_C_hub\PP_Delay -I ..\..\..\PP_Library_C_hub\PP_Hardware_Library -I ..\..\..\PP_Library_C_hub\PP_LCDgraph_Library -I ..\..\..\PP_Library_C_hub\PP_Pins -I .-I.\RTE\_Target_1-IC:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\poter\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F429xx -DSTM32F427_437xx-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9B267A)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B2678)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5D9B2678)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9B267A)
-I (config.h)(0x63E7D5F5)
-I (stm32f4xx.h)(0x5D012A80)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F9F3E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F9F3E)
-I (system_stm32f4xx.h)(0x5D14BF58)
-F (.\stm32f_it.c)(0x63E7D65F)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\..\PP_Library_C_hub\PP_Delay -I ..\..\..\PP_Library_C_hub\PP_Hardware_Library -I ..\..\..\PP_Library_C_hub\PP_LCDgraph_Library -I ..\..\..\PP_Library_C_hub\PP_Pins -I .-I.\RTE\_Target_1-IC:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\poter\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F429xx -DSTM32F427_437xx-o .\objects\stm32f_it.o --omf_browse .\objects\stm32f_it.crf --depend .\objects\stm32f_it.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9B267A)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B2678)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5D9B2678)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9B267A)
-F (..\..\..\PP_Library_C_hub\PP_Pins\def_pins_stm32f4.h)(0x63E7D2CA)()
-F (RTE\Device\STM32F429ZITx\startup_stm32f429xx.s)(0x61111520)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_Target_1-IC:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\poter\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "STM32F429xx SETA 1"--list .\listings\startup_stm32f429xx.lst --xref -o .\objects\startup_stm32f429xx.o --depend .\objects\startup_stm32f429xx.d)
-F (RTE\Device\STM32F429ZITx\system_stm32f4xx.c)(0x61111520)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\..\..\PP_Library_C_hub\PP_Delay -I ..\..\..\PP_Library_C_hub\PP_Hardware_Library -I ..\..\..\PP_Library_C_hub\PP_LCDgraph_Library -I ..\..\..\PP_Library_C_hub\PP_Pins -I .-I.\RTE\_Target_1-IC:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\poter\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F429xx -DSTM32F427_437xx-o .\objects\system_stm32f4xx.o --omf_browse .\objects\system_stm32f4xx.crf --depend .\objects\system_stm32f4xx.d)
-I (.\stm32f4xx.h)(0x5D012A80)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F9F3E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F9F3E)
-I (C:\Users\poter\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F9F3E)
-I (.\system_stm32f4xx.h)(0x5D14BF58)

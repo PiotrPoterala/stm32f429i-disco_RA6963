@@ -3,11 +3,12 @@
 
 	#include "def_pins_stm32f4.h"
 
-//	#define LCD_PORT GPIOE
-//	#define CD PE8
-//	#define RD PE9
-//	#define WR PE10
-//	#define CE PE11
-//	#define RES PE12
+	#define  LED_PORT GPIOG 
+	#define  LED1 PG13 
 
+	#define  BUTTON_PORT		GPIOA
+	#define  BUTTON 					PA0
+
+	#define  nBUTTON 			0x00000001
+	
 #endif
