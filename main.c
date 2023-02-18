@@ -11,6 +11,7 @@
 
 void writeTestText(PLCDgraph *lcd);
 void writeTestIcon(PLCDgraph *lcd);
+void writeTestTextGraph(PLCDgraph *lcd);
 
 PLCDgraph lcd;
 PCheckSignals checkButtons;
@@ -45,13 +46,15 @@ int main(void){
 				switch(screen){
 					case 0:writeTestText(&lcd);
 								break; 
+					case 1:writeTestTextGraph(&lcd);
+								break; 
 					default: writeTestIcon(&lcd);
 							break;
 					
 				}
 				
 				screen++;
-				if(screen>1)screen=0;
+				if(screen>2)screen=0;
 			}else if(!(checkButtons.data.checkedSetSignals & nBUTTON) && (checkButtons.data.madeSignals & nBUTTON)){
 				checkButtons.data.madeSignals &=~nBUTTON;
 				
@@ -66,28 +69,46 @@ int main(void){
 void writeTestText(PLCDgraph *lcd){
 	
 		lcd->reset(&lcd->data, 1);
-//	lcd->data.typeOfFont=BASE_FONT;
 		lcd->setTextAtribiuteModeEnable(&lcd->data, true);
 		
 		lcd->seek(&lcd->data, 0, 0);
 		lcd->write(&lcd->data, "Hello!");
-		
+	
 		lcd->seek(&lcd->data, 0, 1);
+		lcd->write(&lcd->data, "Cze""\xA6\xA1");
+		
+		lcd->seek(&lcd->data, 0, 2);
 		lcd->setReverse(&lcd->data, true);
 		lcd->write(&lcd->data, "Hello!");
 		lcd->setReverse(&lcd->data, false);
 		
-		lcd->seek(&lcd->data, 0, 2);
+		lcd->seek(&lcd->data, 0, 3);
 		lcd->setBlink(&lcd->data, true);
 		lcd->write(&lcd->data, "Hello!");
 		lcd->setBlink(&lcd->data, false);
 		
-		lcd->seek(&lcd->data, 0, 3);
+		lcd->seek(&lcd->data, 0, 4);
 		lcd->setIndependentWriteTextAtribiutes(&lcd->data, true);
 		lcd->setReverse(&lcd->data, true);
-		lcd->writeTextAtribiutesOnTheArea(&lcd->data, 2, 3, 5, 1);
+		lcd->writeTextAtribiutesOnTheArea(&lcd->data, 2, 4, 5, 1);
 		lcd->write(&lcd->data, "Hello!");
 		lcd->setReverse(&lcd->data, false);
+		
+		lcd->setCursorEnable(&lcd->data, true);
+		lcd->seekCursor(&lcd->data, 2, 5);
+	
+}
+
+void writeTestTextGraph(PLCDgraph *lcd){
+	
+		lcd->reset(&lcd->data, 1);
+		lcd->setFont(&lcd->data, FONT_1);
+		
+		lcd->seek(&lcd->data, 0, 0);
+		lcd->write(&lcd->data, "XY");
+	
+		lcd->seek(&lcd->data, 1, 1);
+		lcd->write(&lcd->data, "YZ");
 	
 }
 
