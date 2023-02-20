@@ -3,7 +3,6 @@
 #include "def_pins_stm32f4.h"
 #include "input_signals.h"
 
-//konfigurowanie sygnalow taktujacych
 void RCC_Config(void){
 		int StartUpCounter = 0;
 	
@@ -99,7 +98,7 @@ void NVIC_Config(void){
                  
 		//priorytet 0 przypisany został SysTick
 
-		NVIC_SetPriority(TIM1_UP_TIM10_IRQn, 5); 	//obsługa liniałów
+		NVIC_SetPriority(TIM1_UP_TIM10_IRQn, 5); 
 		NVIC_EnableIRQ(TIM1_UP_TIM10_IRQn);
 }
 
@@ -108,29 +107,29 @@ void GPIO_Config(void)
 {
 
 	//konfiguracja portu A
-	IN_SET_REG(GPIOA, Pin0, IO_IN_NPUD);	
+	IN_SET_REG(GPIOA, Pin0, IO_IN_NPUD);	//user button	
 	
-//konfiguracja portu C
-	OUT_SET_REG(GPIOC, Pin3, IO_OUT_HS);	//CD
-	OUT_SET_REG(GPIOC, Pin8, IO_OUT_HS);	//RD
-	OUT_SET_REG(GPIOC, Pin11, IO_OUT_HS);	//WR
-	OUT_SET_REG(GPIOC, Pin12, IO_OUT_HS);	//CE
-	OUT_SET_REG(GPIOC, Pin13, IO_OUT_HS);	//RES
+//port C
+//	OUT_SET_REG(GPIOC, Pin3, IO_OUT_HS);	//CD
+//	OUT_SET_REG(GPIOC, Pin8, IO_OUT_HS);	//RD
+//	OUT_SET_REG(GPIOC, Pin11, IO_OUT_HS);	//WR
+//	OUT_SET_REG(GPIOC, Pin12, IO_OUT_HS);	//CE
+//	OUT_SET_REG(GPIOC, Pin13, IO_OUT_HS);	//RES
 
-//konfiguracja portu D
+////port D
 
-	OUT_SET_REG(GPIOD, Pin2, IO_OUT_HS);
-	OUT_SET_REG(GPIOD, Pin4, IO_OUT_HS);
-	OUT_SET_REG(GPIOD, Pin5, IO_OUT_HS);
+//	OUT_SET_REG(GPIOD, Pin2, IO_OUT_HS);
+//	OUT_SET_REG(GPIOD, Pin4, IO_OUT_HS);
+//	OUT_SET_REG(GPIOD, Pin5, IO_OUT_HS);
 
-//konfiguracja portu E
-	OUT_SET_REG(GPIOE, Pin2, IO_OUT_HS);
-	OUT_SET_REG(GPIOE, Pin3, IO_OUT_HS);
-	OUT_SET_REG(GPIOE, Pin4, IO_OUT_HS);
-	OUT_SET_REG(GPIOE, Pin5, IO_OUT_HS);
-	OUT_SET_REG(GPIOE, Pin6, IO_OUT_HS);
+////port E
+//	OUT_SET_REG(GPIOE, Pin2, IO_OUT_HS);
+//	OUT_SET_REG(GPIOE, Pin3, IO_OUT_HS);
+//	OUT_SET_REG(GPIOE, Pin4, IO_OUT_HS);
+//	OUT_SET_REG(GPIOE, Pin5, IO_OUT_HS);
+//	OUT_SET_REG(GPIOE, Pin6, IO_OUT_HS);
 
-//konfiguracja portu G
+//port G
 	OUT_SET_REG(GPIOG, Pin13, IO_OUT_HS);	//LED
 
 	PIN_CLR(LED_PORT, LED1);
@@ -139,11 +138,11 @@ void GPIO_Config(void)
 
 void TIM_Config(void){
 
-	TIM1->CR1&=~TIM_CR1_DIR;  //kierunek zliczania od 0 w górę
-	TIM1->CR1&=~TIM_CR1_CMS;  //licznik zlicza zgodnie z kierunkiem podanym w DIR
+	TIM1->CR1&=~TIM_CR1_DIR;  
+	TIM1->CR1&=~TIM_CR1_CMS;  
 	TIM1->PSC=100-1;	
 	TIM1->ARR=((APB2_CORE_CLOCK/(TIM1->PSC+1))/BASE_FREQUENCY_OF_TIM1)-1;
-  TIM1->EGR = TIM_EGR_UG;  // Generate an update event to reload the Prescaler immediately 
+  TIM1->EGR = TIM_EGR_UG;  
 	
 	TIM1->DIER &= ~TIM_DIER_UIE;					
 	TIM1->CR1 &= ~TIM_CR1_CEN;

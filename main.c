@@ -8,6 +8,7 @@
 #include "pp_lcdgraph.h"
 #include "pp_signals.h"
 #include "input_signals.h"
+#include "pp_const_ports_masks_list.h"
 
 void writeTestText(PLCDgraph *lcd);
 void writeTestIcon(PLCDgraph *lcd);
@@ -15,7 +16,7 @@ void writeTestTextGraph(PLCDgraph *lcd);
 
 PLCDgraph lcd;
 PCheckSignals checkButtons;
-
+PConstPortsList lcdPortsList;
 int screen=0;
 
 int main(void){
@@ -27,10 +28,13 @@ int main(void){
 
 		PCheckSignalsConstruct(&checkButtons);
 
-		uPin outputsPins[LCD_PINS_SIZE]={{GPIOD, Pin2}, {GPIOD, Pin4}, {GPIOD, Pin5}, {GPIOE, Pin2}, {GPIOE, Pin3}, {GPIOE, Pin4}, {GPIOE, Pin5}, {GPIOE, Pin6},
-																			{GPIOC, Pin3}, {GPIOC, Pin8}, {GPIOC, Pin11}, {GPIOC, Pin12}, {GPIOC, Pin13}}; 
-		uPortMask outputsPortMask[3]={{GPIOC, 0, 0}, {GPIOD, 0, 0}, {GPIOE, 0, 0}};
-		PLCDgraphConstruct(&lcd, outputsPins, outputsPortMask, 3);
+		uPin ioPins[LCD_PINS_SIZE]={{GPIOD, Pin2}, {GPIOD, Pin4}, {GPIOD, Pin5}, {GPIOE, Pin2}, {GPIOE, Pin3}, {GPIOE, Pin4}, {GPIOE, Pin5}, {GPIOE, Pin6},
+																			{GPIOC, Pin3}, {GPIOC, Pin8}, {GPIOC, Pin11}, {GPIOC, Pin12}, {GPIOC, Pin13}}; //DB0, DB1, DB2, DB3, DB4, DB5, DB6, DB7, CD, RD, WR, CE, RES
+		uPortMask lcdPortsTab[5];																
+		PConstPortsListConstruct(&lcdPortsList, lcdPortsTab, sizeof(lcdPortsTab)/sizeof(uPortMask));
+		
+		lcdPortsList.create(&lcdPortsList.data, ioPins, LCD_DATA_PINS_SIZE);																													
+		PLCDgraphConstruct(&lcd, ioPins, &lcdPortsList.data);
 		
 		if(SysTick_Config(16000000)){while(1);}	
 		

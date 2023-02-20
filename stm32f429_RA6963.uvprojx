@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F427_437xx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\..\PP_Library_C_hub\PP_Delay;..\..\..\PP_Library_C_hub\PP_Hardware_Library;..\..\..\PP_Library_C_hub\PP_LCDgraph_Library;..\..\..\PP_Library_C_hub\PP_Pins;.;..\..\..\PP_Library_C_hub\PP_CheckSignals_Library</IncludePath>
+              <IncludePath>..\..\..\PP_Library_C_hub\PP_Delay;..\..\..\PP_Library_C_hub\PP_Hardware_Library;..\..\..\PP_Library_C_hub\PP_LCDgraph_Library;..\..\..\PP_Library_C_hub\PP_Pins;.;..\..\..\PP_Library_C_hub\PP_CheckSignals_Library;..\..\..\PP_Library_C_hub\PP_List_Library</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -436,6 +436,11 @@
               <FileName>pp_signals.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\PP_Library_C_hub\PP_CheckSignals_Library\pp_signals.c</FilePath>
+            </File>
+            <File>
+              <FileName>pp_const_ports_masks_list.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\PP_Library_C_hub\PP_List_Library\pp_const_ports_masks_list.c</FilePath>
             </File>
           </Files>
         </Group>
